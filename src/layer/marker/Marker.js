@@ -98,6 +98,9 @@ L.Marker = L.Class.extend({
 	},
 
 	_reset: function () {
+        if (!this._map) {
+            return;
+        }
 		var pos = this._map.latLngToLayerPoint(this._latlng).round();
 
 		L.DomUtil.setPosition(this._icon, pos);

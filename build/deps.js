@@ -47,6 +47,12 @@ var deps = {
 		deps: ['TileLayer']
 	},
 
+	TileLayerPOIProxy: {
+		src: ['layer/tile/TileLayer.POIProxy.js'],
+		desc: 'Tile layer made to load sources from POIProxy.',
+		deps: ['TileLayer']
+	},
+
 	ImageOverlay: {
 		src: ['layer/ImageOverlay.js'],
 		desc: 'Used to display an image over a particular rectangular area of the map.'
